@@ -1,0 +1,189 @@
+
+// =============== large
+@media screen and (max-width: 1500px)
+
+    .container
+        max-width: 75%
+
+    .inner-block
+        min-width: 75%
+
+
+
+// =============== tablet 
+@media screen and (max-width: 1199px)
+    .container
+        max-width: 90%
+
+    .inner-block
+        min-width: 90%
+    header
+        background: rgba(6, 130, 223, 0.7)
+        height: 80px
+
+    .header-mob
+        height: 400px
+        
+    .nav-header
+        display: none
+        &-mob
+            display: flex
+        ul
+            flex-direction: column
+            height: 300px
+    .logo
+        &-block
+            display: none
+            &-mob
+                display: block
+                position: absolute
+                left: 10px
+                top: 10px
+    .burger
+        display: block
+        position: absolute
+        right: 30px
+        top: 30px
+
+        &__line
+            width: 30px
+            height: 2px
+            margin-bottom: 10px
+            background: #fff
+
+    .progress
+        right: 0
+
+    .second
+        &:after
+            height: 70px
+            bottom: -70px
+        &-card
+            &-block
+                flex-direction: column
+                align-items: center
+            &-item
+                width: 100%
+                margin-bottom: 20px
+                max-width: none
+
+    .apartments
+        padding: 0
+        padding-top: 210px
+
+        &::after
+            height: 100px
+            bottom: -100px
+        &-item
+            flex-direction: column
+
+    .apart-item-slider
+        margin-bottom: 30px
+
+    .services
+        padding: 0px 0
+        padding-top: 15px
+        &::after
+            height: 85px
+            bottom: -165px
+        &-item
+            width: 49%
+
+
+
+
+
+
+// =============== mobile
+@media screen and (max-width: 767px)
+
+    .container
+        max-width: 90%
+
+    .header-mob
+        height: 500px
+
+    .key-link
+        &-one
+            display: none
+        &-two
+            left: 10%
+  
+    .main
+        min-height: 750px
+        position: relative
+        padding-top: 50px
+
+    .second
+        &:after
+            height: 50px
+            bottom: -50px
+
+    .services
+        &::after
+            height: 50px
+            bottom: -115px
+        &-item
+            width: 100%
+
+    .contacts
+        padding-bottom: 70px
+        height: auto
+
+        &-block
+            display: flex
+            flex-direction: column
+            align-items: center
+
+        &-info
+            margin-right: 0
+            margin-bottom: 30px
+    
+    .apartments
+        padding-top: 120px
+        &:after
+            height: 82px
+            bottom: -82px
+        .apart-title
+            max-width: 350px
+
+        .features
+            display: none
+
+        .apart
+            &-item-slider
+                max-width: 100%
+            &-img-block
+                margin-right: 0
+
+            &-slider-nav
+                margin-right: 0
+
+    .infrastructure
+        &-links
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+        &-link
+            position: static
+            margin: 8px 10px
+
+    .link
+        &-cran-two
+            display: none
+        &-yacht-two
+            display: none
+    .contacts
+        padding-top: 110px
+        .form
+            .name 
+                flex-direction: column
+                input
+                    width: 100%
+
+
+    .footer
+        &-menu
+            display: none
+        .nav-menu
+            justify-content: center

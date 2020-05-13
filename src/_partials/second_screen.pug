@@ -1,0 +1,16 @@
+include second-card-item.pug
+
+mixin second_screen
+    +b.second
+        +b.second-content.inner-block.container
+            +b.second-text
+            +b.title-default
+                +e.IMG.img(src="./img/anchor.svg")
+                +e.H3.title Философия клуба
+                +e.P.description.regular_font Скорость и насыщенность жизни современного успешного человека порой не дает возможности перевести дыхание, расслабиться должным образом и уделить время любимому хобби. Посидеть с чашечкой ароматного кофе на собственной террасе и долго вглядываться в синюю даль
+            +b.second-card-block
+                +second-card-item
+                +second-card-item
+                +second-card-item
+
+            

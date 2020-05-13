@@ -1,0 +1,29 @@
+mixin header
+	#preloader
+		.lds-css.ng-scope
+			.lds-eclipse
+				.rotate
+
+	+b.HEADER.header
+		+b.logo-block-mob
+			+b.A.logo(href="#")
+				+e.IMG.img(src="./img/logo.svg")
+
+		+b.burger
+			+e.line
+			+e.line
+			+e.line
+		+b.header-inner.inner-block.container
+			+b.NAV.nav-menu.nav-header
+				+b.UL.main-menu.menu-list
+					+e.LI.item 
+						a(href="#") Философия клуба
+					+e.LI.item
+						a(href="#") Планировки
+					+e.LI.item
+						a(href="#") Услуги
+					+e.LI.item
+						a(href="#") Инфраструктура марины
+					+e.LI.item
+						a(href="#") Контакты
+					

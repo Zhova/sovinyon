@@ -1,0 +1,31 @@
+mixin contacts
+    +b.contacts
+        +e.back-gradient.back-gradient
+        +b.contacts-content.container.inner-block
+            +b.contacts-title
+                +e.P.title КОНТАКТЫ
+            +b.contacts-block
+                +b.contacts-info
+                    +e.P.title Наши контакты
+                    +b.contacts-info__item.phones
+                        +e.P.title.regular_font Телефон
+                        +e.P.text.regular_font +380976655475, +380676655475
+                    +b.contacts-info__item.mail
+                        +e.P.title.regular_font e-mail
+                        +e.P.text.regular_font manager@sovinyon.com.ua
+                    +b.contacts-info__item.address
+                        +e.P.title.regular_font Адрес
+                        +e.P.text.regular_font Oddesa, Spartakovskiy Per., bld. 13, appt. 5
+                +b.contacts-form-wrapper
+                    +e.P.title.small_title Оставить сообщение
+                    +b.FORM.form
+                        +b.name
+                            +e.INPUT.name(type="text" placeholder="tenamel")
+                            +e.INPUT.surname(type="text" placeholder="surname")
+                        +e.INPUT.phone(type="tel" placeholder="tel")
+                        +e.INPUT.mail(type="email" placeholder="email")
+                        +e.TEXTAREA(placeholder="")
+                        +e.INPUT.button.btn_default#send-btn(type="submit")
+
+
+

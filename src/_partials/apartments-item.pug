@@ -1,0 +1,35 @@
+mixin apartments-item
+    +b.apartments-item
+        +b.apart-item-slider
+            +b.apart-img-block
+                img.slider-item(src="./img/apart.jpg")
+                img.slider-item(src="./img/image_1.jpg")
+                img.slider-item(src="./img/yaht.jfif")
+                img.slider-item(src="./img/apart.jpg")
+                img.slider-item(src="./img/image_1.jpg")
+                img.slider-item(src="./img/yaht.jfif")
+
+            +b.apart-slider-nav
+                img.slider-item(src="./img/apart.jpg")
+                img.slider-item(src="./img/image_1.jpg")
+                img.slider-item(src="./img/yaht.jfif")
+                img.slider-item(src="./img/apart.jpg")
+                img.slider-item(src="./img/image_1.jpg")
+
+        +b.apart-info-block
+            +b.title-default.apart-title
+                +e.P.title апартаменты у моря 
+                +e.P.description.description Мы предлагаем купить Вам апартаменты площадью до 140 м2 с собственной террасой и панорамным видом на море. Наличие газового отопления и современных технологий при строительстве позволяет использовать жилье круглогодично.Действует пакетное предложение: при покупке апартаментов вы получаете в собственность паркоместо и складское помещение, а также вступая в Клуб, приобретаете первостепенное право занять яхто-место в заливе, а также особые условия содержания, обслуживания и хранения судна. Ежедневный рассвет в подарок
+    
+            +b.features
+                +e.item
+                    p.remark до #[span 140] м2
+                +e.item
+                    img(src="./img/sailboat.svg")
+                    p.remark СКЛАД И ПАРКОМЕСТО
+                +e.item
+                    img(src="./img/propeller.svg")
+                    p.remark ОБСЛУЖИВАНИЕ И ХРАНЕНИЕ
+
+            +e.A.btn.btn_default(href="#") ПОДРОБНЕЕ
+            

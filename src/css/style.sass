@@ -1,0 +1,727 @@
+#preloader
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  max-width: 100vw
+  max-height: 100vh
+  z-index: 99999999
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #ffffff
+  display: none
+
+@keyframes lds-eclipse
+  0%
+		-webkit-transform: rotate(0deg)
+		transform: rotate(0deg)
+
+  50%
+		-webkit-transform: rotate(180deg)
+		transform: rotate(180deg)
+
+  100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+
+@-webkit-keyframes lds-eclipse
+	0%
+	-webkit-transform: rotate(0deg)
+	transform: rotate(0deg)
+
+	50%
+	-webkit-transform: rotate(180deg)
+	transform: rotate(180deg)
+
+	100%
+	-webkit-transform: rotate(360deg)
+	transform: rotate(360deg)
+
+.lds-eclipse
+  position: relative
+  width: 200px
+
+.rotate
+	position: absolute
+	-webkit-animation: lds-eclipse 1s linear infinite
+	animation: lds-eclipse 1s linear infinite
+	width: 160px
+	height: 160px
+	top: 20px
+	left: 20px
+	border-radius: 50%
+	background: url('../img/yaht.jfif')
+
+	width: 200px !important
+	height: 200px !important
+	-webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px)
+	transform: translate(-100px, -100px) scale(1) translate(100px, 100px)
+
+.preloader-hide
+  animation: preloader-hide 0.5s linear
+
+@keyframes preloader-hide
+  0%
+		opacity: 1
+
+  100%
+		opacity: 0
+		display: none
+$green: #24DA6B
+$blue: #00A9C0
+	
+*, *:after, *:before
+	box-sizing: border-box
+	font-family: 'Roboto'
+	padding: 0
+	margin: 0
+	text-decoration: none
+	color: inherit
+	max-width: 100%
+	color: #fff
+	font-weight: 300
+	outline: none
+
+body
+	overflow-x: hidden
+ul
+	li
+		list-style: none
+
+
+.slick-slider
+	*
+		max-width: none
+
+	.next
+		right: -50px
+
+	.prev 
+		transform: rotate(180deg)
+		left: -50px
+	
+.slick-arrow
+	width: 30px
+	height: 30px
+	background-image: url("../img/next.svg")
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
+	position: absolute
+	top: 37%
+	cursor: pointer
+	z-index: 99
+
+.container
+	max-width: 60%
+
+.inner-block
+	min-width: 60%
+
+.regular_font
+	font-size: 16px
+	line-height: 24px
+
+.small_font
+	font-size: 14px
+	line-height: 20px
+
+.small_title
+	font-size: 24px
+	line-height: 28px
+	font-weight: 500
+
+.title_font
+	font-size: 42px
+
+
+.btn_default
+	background: $green
+	border-radius: 41px
+	width: 204px
+	height: 46px
+	display: flex
+	align-items: center
+	justify-content: center
+
+
+
+.nav-menu
+	display: flex
+	align-items: center
+
+
+.menu-list
+	display: flex
+	justify-content: space-between
+	align-items: center
+	min-width: 100%
+
+
+.title-default
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+
+	&__img
+		margin-bottom: 25px
+
+	&__title
+		color: $blue
+		font-size: 36px
+		margin-bottom: 20px
+		font-weight: 500
+
+	&__description
+		color: #546E7A
+		max-width: 600px
+		margin-bottom: 60px
+
+
+.links_green
+	background: $green
+	width: 40px
+	height: 40px
+	position: absolute
+	border-radius: 50%
+	display: block
+
+
+.back-gradient
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	z-index: 0
+
+
+
+
+
+
+	
+header
+	background: rgba(6, 130, 223, 0.4)
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+	display: flex
+	justify-content: center
+	height: 100px
+	align-items: center
+	z-index: 999
+
+.logo-block-mob
+	display: none
+.burger
+	display: none
+
+.main
+	background: url("../img/first-bg.png")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	width: 100vw
+	height: 100vh
+	padding: 60px 0
+	padding-top: 100px
+	display: flex
+	justify-content: center
+	margin-bottom: 60px
+	
+	&__back-gradient
+		background-image: linear-gradient(180deg, rgba(1, 67, 95, 0) 76.33%, #01435F 106.28%) 
+	&-content
+		&__key-link
+			&:before
+				content: ""
+				background: url("../img/key.svg")
+				background-position: center
+				background-repeat: no-repeat
+				background-size: cover
+				position: absolute
+				width: 25px
+				height: 25px
+				left: 8px
+				top: 7px
+
+
+
+	&-info
+		max-width: 530px
+		margin-top: 50px
+
+		&__title
+			font-size: 54px
+			font-weight: 500
+
+		&__subtitle
+			margin-bottom: 20px
+
+.key-link
+
+	&-one
+		top: 40%
+		right: 20%
+	&-two
+		top: 63%
+		left: 28%
+
+
+.progress
+	display: flex
+	justify-content: flex-end
+	position: absolute !important
+	bottom: 15%
+	right: 20%
+
+
+	&-item
+		border-right: 1px solid white
+		display: flex !important
+		align-items: center
+		padding: 0 10px
+
+		&__num
+			font-size: 48px
+			line-height: 56px
+			font-weight: bold
+			margin-right: 10px
+		&__description
+			max-width: 100px
+		&:last-child
+			border: 0
+	
+
+
+
+.second
+	position: relative
+	display: flex
+	justify-content: center
+	position: relative
+	z-index: 2
+	padding: 30px 0
+
+	&::before
+		content: ""
+		position: absolute
+		top: -180px
+		left: 0
+		background: url('../img/curves_white.svg')
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 180px
+		background-repeat: no-repeat
+
+	&::after
+		content: ""
+		position: absolute
+		bottom: -170px
+		left: 0
+		background: url(../img/curves_white_down.svg)
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 175px
+		background-repeat: no-repeat
+
+	&-card-block
+		display: flex
+		justify-content: space-between
+
+	&-card-item
+		background: url('../img/image_1.jpg')
+		background-position: center
+		// background-size: cover
+		background-repeat: no-repeat
+		border-radius: 8px
+		max-width: 362px
+		width: 32%
+		min-height: 400px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		position: relative
+		overflow: hidden
+
+		&__back-gradient
+			background-image: linear-gradient(0deg, rgba(1, 67, 95, 0.3), rgba(1, 67, 95, 0.3))
+
+
+.card-item-content
+	padding: 30px
+	padding-top: 60px
+	position: relative
+
+	&__title
+		margin-bottom: 15px
+
+
+
+.apartments
+	background: #EDFDFF
+	display: flex
+	justify-content: center
+	position: relative
+	padding: 100px 0
+	z-index: 1
+	padding-top: 375px
+
+	// &::before
+	// 	content: ""
+	// 	position: absolute
+	// 	top: -100px
+	// 	left: 0
+	// 	background: url('../img/curves_apartmens.svg')
+	// 	background-position: center
+	// 	background-size: cover
+	// 	width: 100%
+	// 	height: 208px
+	// 	background-repeat: no-repeat
+
+
+
+	&::after
+		content: ""
+		position: absolute
+		bottom: -150px
+		left: 0
+		background: url('../img/curves_apartmens_down.svg')
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 208px
+		background-repeat: no-repeat
+
+	.apartments-item
+		display: flex !important
+		align-items: center
+
+	.apart
+		&-item-slider
+			max-width: 460px
+		&-img-block
+			max-width: 460px
+			margin-right: 40px
+			margin-bottom: 20px
+
+		&-title
+			text-align: left
+			align-items: flex-start
+			max-width: 475px
+
+			.description
+				margin-bottom: 30px
+		&-slider-nav
+			margin-right: 40px
+			cursor: pointer
+
+			img
+				width: 200px
+				height: 70px
+				border-radius: 8px
+				margin: 0 10px
+	.features
+		display: flex
+		margin-bottom: 30px
+
+		img
+			margin-right: 10px
+
+		span
+			font-size: 48px
+			color: $blue
+			line-height: 40px
+
+
+
+		&__item
+			border-right: 1px solid $blue
+			padding: 0 12px
+			display: flex
+			align-items: center
+			&:first-child
+				padding-left: 0
+				padding-right: 25px
+
+			.remark
+				color: $blue
+				max-width: 100px
+				display: flex
+				align-items: flex-end
+
+
+			&:last-child
+				border: 0
+
+
+.infrastructure
+	background: url('../img/infrastructure-bg.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	width: 100vw
+	height: 100vh	
+	display: flex
+	justify-content: center
+	position: relative
+	margin: 50px 0
+
+	&__back-gradient
+		background-image: linear-gradient(180deg, rgba(1, 67, 95, 0) 47.66%, #01435F 100%)
+
+	&-content
+		padding-top: 130px
+
+	&-link
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+
+	&-info
+		position: absolute
+		bottom: 22%
+
+		&-item
+			text-align: center
+			max-width: 600px
+
+			&__title
+				margin-bottom: 30px
+
+.link
+	&-beach
+		left: 15%
+		top: 40%
+
+	&-cran-one
+		left: 23%
+		top: 47%
+
+	&-cran-two
+		right: 20%
+		top: 46%
+
+	&-garage
+		left: 25%
+		top: 38%
+
+	&-restaurant
+		left: 29%
+		top: 35%
+
+	&-yacht-one
+		left: 40%
+		top: 44%
+
+	&-yacht-two
+		right: 26%
+		top: 53%
+
+	&-apart
+		left: 50%
+		top: 39%
+
+	&-transport
+		left: 47%
+		top: 51%
+
+	&-car
+		right: 35%
+		top: 45%
+
+	&-serv
+		top: 39%
+		right: 15%
+
+
+
+
+
+.services
+	display: flex
+	justify-content: center
+	position: relative
+	padding: 100px 0
+
+	&::before
+		content: ""
+		position: absolute
+		top: -180px
+		left: 0
+		background: url('../img/curves_white.svg')
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 190px
+		background-repeat: no-repeat
+
+	&::after
+		content: ""
+		position: absolute
+		bottom: -200px
+		left: 0
+		background: url(../img/curves_white_down.svg)
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 210px
+		background-repeat: no-repeat
+
+
+	&-title
+		width: 100%
+		text-align: left
+
+		&__title 
+			color: $blue
+			font-size: 36px
+			margin-bottom: 50px
+			font-weight: 500
+	&-items  
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	
+	&-item
+		background: url('../img/image_1.jpg')
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		border-radius: 8px
+		box-shadow: 0px 15px 30px rgba(81, 193, 213, 0.25)
+		margin-bottom: 30px
+		width: 32%
+		max-width: 495px
+		height: 300px
+		display: flex
+		justify-content: center
+		text-align: center
+		padding: 30px
+		align-items: flex-end
+		position: relative
+		overflow: hidden
+
+		&__back-gradient
+			background-image: linear-gradient(359.24deg, #01435F 0.87%, rgba(1, 67, 95, 0) 45.62%)
+		&__title
+			position: relative
+
+		
+
+.contacts
+	display: flex
+	justify-content: center
+	background: url('../img/contacts-bg.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	height: 900px
+	padding-top: 200px
+	margin-top: 80px
+	position: relative
+	z-index: -1
+
+	&__back-gradient
+		background-image: linear-gradient(207.66deg, #01435F 1.55%, rgba(1, 67, 95, 0) 83.02%)
+
+	&-content
+		position: relative
+
+	&-block
+		display: flex
+		justify-content: flex-end
+
+	&-title
+		text-align: center
+
+		&__title
+			font-size: 36px
+			font-weight: 500
+			margin-bottom: 20px
+
+	&-info
+		margin-right: 40px
+		&__item
+			padding: 20px 0
+			border-bottom: 1px solid #fff
+			&:last-child
+				border: 0
+				padding-bottom: 0
+
+	&-form-wrapper
+		background: rgba(225, 225, 225, 0.2)
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)
+		border-radius: 8px
+		padding: 35px 20px
+		max-width: 360px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		&__title
+			margin-bottom: 20px
+
+	.form
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		.name
+			display: flex
+			justify-content: space-between
+			input
+				width: 49%
+
+		input
+			background: #F5F5F5
+			border-radius: 8px
+			height: 34px
+			color: black
+			padding: 10px
+			margin-bottom: 15px
+			border: 0
+			box-shadow: 0
+			width: 100%
+		
+		textarea
+			background: #F5F5F5
+			border-radius: 8px
+			height: 100px
+			color: black
+			padding: 10px
+			margin-bottom: 15px
+			resize: none
+			width: 100%
+
+		#send-btn
+			background: $green
+			border-radius: 41px
+			width: 204px
+			height: 46px
+			display: flex
+			align-items: center
+			justify-content: center
+			cursor: pointer
+
+
+
+	
+
+.footer
+	height: 150px
+	background: #01435F
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+
+	
